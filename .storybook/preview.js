@@ -18,8 +18,10 @@ const WhatIsTheme = () => {
       as="pre"
       sx={(x) => {
         if (!state) {
-          setState(x);
-          console.log(x);
+          setTimeout(() => {
+            setState(x);
+            console.log(x);
+          });
         }
         return {};
       }}
